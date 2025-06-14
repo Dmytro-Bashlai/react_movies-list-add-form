@@ -70,7 +70,7 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         return;
       }
 
-      setCount(preventCount => preventCount + 1);
+      setCount(prevCount => prevCount + 1);
       onAdd(movieData);
       clearForm();
     },
